@@ -10,9 +10,21 @@ export const CartProvider = ({ children }) => {
   });
 
   const addProduct = (product, key) => {
-    setCart({
+    if (key === "casamento") {
+      return setCart({
+        ...cart,
+        casamento: [...cart.casamento, product],
+      });
+    }
+    if (key === "formatura") {
+      return setCart({
+        ...cart,
+        formatura: [...cart.formatura, product],
+      });
+    }
+    return setCart({
       ...cart,
-      key: [cart[key], product],
+      confraternizacao: [...cart.confraternizacao, product],
     });
   };
 

@@ -1,7 +1,17 @@
+import { useContext } from "react";
+import { CartContext } from "../../Providers/cart";
+import ProductsContainer from "../../components/ProductsContainer";
 const Casamento = () => {
+  const { cart } = useContext(CartContext);
+  const casamentoProducts = cart.casamento;
+  console.log(casamentoProducts);
   return (
     <>
-      <h1>Casamento</h1>
+      {casamentoProducts !== [] ? (
+        <ProductsContainer products={casamentoProducts} />
+      ) : (
+        ""
+      )}
     </>
   );
 };

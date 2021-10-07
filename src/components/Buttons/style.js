@@ -11,4 +11,9 @@ export const Button = styled.button`
   background-color: transparent;
   color: #fff;
   border: 1px solid #fff;
+  &:hover {
+    transition: 0.3s;
+    background-color: #fff;
+    color: #323232;
+  }
 `;
