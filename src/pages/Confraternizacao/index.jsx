@@ -7,7 +7,10 @@ const Confraternizacao = () => {
   return (
     <>
       {confraternizacaoProducts !== [] ? (
-        <ProductsContainer products={confraternizacaoProducts} />
+        <ProductsContainer
+          page="confraternizacao"
+          products={confraternizacaoProducts}
+        />
       ) : (
         ""
       )}

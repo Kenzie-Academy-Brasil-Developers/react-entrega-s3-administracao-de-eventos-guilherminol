@@ -28,9 +28,28 @@ export const CartProvider = ({ children }) => {
     });
   };
 
-  const removeProduct = (product) => {
-    const newCart = cart.filter((item) => item.id !== product.id);
-    setCart([newCart]);
+  const removeProduct = (key, product) => {
+    console.log("a");
+    if (key === "casamento") {
+      return setCart({
+        ...cart,
+        casamento: cart.casamento.filter((item) => item.id !== product.id),
+      });
+    }
+    if (key === "formatura") {
+      return setCart({
+        ...cart,
+        formatura: cart.formatura.filter((item) => item.id !== product.id),
+      });
+    }
+    if (key === "confraternizacao") {
+      return setCart({
+        ...cart,
+        confraternizacao: cart.confraternizacao.filter(
+          (item) => item.id !== product.id
+        ),
+      });
+    }
   };
 
   return (

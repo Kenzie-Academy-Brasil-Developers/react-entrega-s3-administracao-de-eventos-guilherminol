@@ -11,10 +11,10 @@ function App() {
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/formatura">Formatura</Link>
+              <Link to="/casamento">Casamento</Link>
             </li>
             <li>
-              <Link to="/casamento">Casamento</Link>
+              <Link to="/formatura">Formatura</Link>
             </li>
             <li>
               <Link to="/confraternizacao">Confraternização</Link>

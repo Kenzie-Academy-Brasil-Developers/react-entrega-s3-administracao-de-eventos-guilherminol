@@ -1,6 +1,7 @@
 import styled from "styled-components";
 
 export const Card = styled.li`
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   background-color: #323232;

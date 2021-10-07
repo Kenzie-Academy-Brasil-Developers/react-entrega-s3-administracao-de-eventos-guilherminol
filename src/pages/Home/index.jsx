@@ -4,6 +4,12 @@ import { ProductsListContext } from "../../Providers/productsList";
 const Home = () => {
   const { productsList } = useContext(ProductsListContext);
   console.log(productsList);
-  return <>{productsList && <ProductsContainer products={productsList} />}</>;
+  return (
+    <>
+      {productsList && (
+        <ProductsContainer shop={true} products={productsList} />
+      )}
+    </>
+  );
 };
 export default Home;

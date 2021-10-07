@@ -6,7 +6,7 @@ const Formatura = () => {
   const formaturaProducts = cart.formatura;
   return (
     <>
-      <ProductsContainer products={formaturaProducts} />
+      <ProductsContainer page="formatura" products={formaturaProducts} />
     </>
   );
 };

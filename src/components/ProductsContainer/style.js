@@ -3,7 +3,7 @@ export const Container = styled.div`
   background-color: lightgrey;
   width: 80%;
   margin: 50px;
-  min-height: 400px;
+  min-height: 560px;
 `;
 export const ProductsList = styled.ul`
   padding: 0;

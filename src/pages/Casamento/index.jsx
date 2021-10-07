@@ -8,7 +8,7 @@ const Casamento = () => {
   return (
     <>
       {casamentoProducts !== [] ? (
-        <ProductsContainer products={casamentoProducts} />
+        <ProductsContainer page={"casamento"} products={casamentoProducts} />
       ) : (
         ""
       )}
